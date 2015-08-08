@@ -7,3 +7,6 @@ Brute force approach:  run a series of simulations, and in each run keep track o
 
 Project Euler Problem 280:  https://projecteuler.net/problem=280
 
+August 2015
+
+
