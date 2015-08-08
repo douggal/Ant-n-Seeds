@@ -1,0 +1,13 @@
+"Project Euler, Problem 280:  Ant and Seeds",,,,,,,,,,,
+,,,,,,,,,,,
+,0,1,2,3,4,,,,,,
+0,,,,,,,Sides of the gird have 'walls' - the ant cannot move outside,,,,
+1,,x,1,x,,,Ant can only move to adjacent square - no diagonal moves,,,,
+2,,4,?,2,,,Ant can carry only one seed at a time.,,,,
+3,,x,3,x,,,"Ant may move to cell containing a seed, but can only drop seed in an empty cell, row 0",,,,
+4,?,?,?,?,?,,"Ant may move to a cell containing a seed, but can carry only one seed at a time.",,,,
+,,,,,,,,,,,
+,,,,,,,Valid moves ,1,2,3,4
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,11/30/2014,429.691588,Moves,,
