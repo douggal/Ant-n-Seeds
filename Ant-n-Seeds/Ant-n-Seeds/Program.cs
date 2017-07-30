@@ -51,11 +51,15 @@ namespace Ant_n_Seeds
             const int numCols = 5; //num cols in the grid
 
             //create an array to hold the count of moves from each simulation run.  Array size = number of simulations to run.
-            const double nbrSimulationsToRun = 1000;
-            double nbrMoves;
+            int nbrSimulationsToRun = 1000;
+
+            nbrSimulationsToRun = PromptNbrSimToRun();
 
             // create the ant and place it in the grid on which the ant moves in the simulations
             AntGrid antGrid = new AntGrid(numRows, numCols);
+
+            // number of moves for a simulation run.
+            double nbrMoves;
 
             Accumulator sumOfMoves = new Accumulator();
 
@@ -79,6 +83,23 @@ namespace Ant_n_Seeds
             Console.ReadKey();
 
 
+        }
+
+        /// <summary>
+        /// Prompt user to enter number of simulations to run.
+        /// </summary>
+        /// <returns>An integer number of simulations to run.</returns>
+        private static int PromptNbrSimToRun()
+        {
+            // Feature 1.1 - prompt user for number of simulations to run.
+            int num;
+            Console.WriteLine("Enter the number of simulations to run: ");
+            while (!Int32.TryParse(Console.ReadLine(), out num))
+            {
+                Console.WriteLine("Invalid input - enter the number of simulations to run or <ctrl>-C to quit: ");
+            }
+
+            return num;
         }
     }
 }
